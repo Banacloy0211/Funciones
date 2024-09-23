@@ -8,8 +8,13 @@
 <body>
     <?php
         function intercambia(&$a, &$b){
+            echo "Valores actuales de a y b : $a , $b";
+            echo "<br> Cambiando los valores";
+            $c = $a;
             $a = $b;
-            $b = $a;
+            $b = $c;
+            
+            echo "<br>Los valores actuales de a y b : $a , $b";
         }
     
     ?>
